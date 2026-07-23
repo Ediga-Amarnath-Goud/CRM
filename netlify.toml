@@ -1,0 +1,12 @@
+[build]
+  command = "cd netlify/functions && npm install && cd ../../dashboard && npm install && npm run build"
+  publish = "dashboard/out"
+  functions = "netlify/functions"
+
+[build.environment]
+  NEXT_PUBLIC_FIREBASE_API_KEY = "AIzaSyDaLQTm3hWtdsCn8uAnPdL2nzsHRLDQWjs"
+  NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = "crm-project-e0a68.firebaseapp.com"
+  NEXT_PUBLIC_FIREBASE_PROJECT_ID = "crm-project-e0a68"
+  NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = "crm-project-e0a68.firebasestorage.app"
+  NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = "147155941387"
+  NEXT_PUBLIC_FIREBASE_APP_ID = "1:147155941387:web:20dfaaa7211ddd9eb22f0e"
